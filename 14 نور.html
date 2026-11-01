@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO Meta Tags -->
+  <title>چهارده نور | تجلی نور واحد در تاریخ اسلام</title>
+  <meta name="description" content="معرفی چهارده معصوم (اهل بیت)، مقاله جامع درباره پیامبر اسلام، حضرت فاطمه زهرا و دوازده امام. سایتی معنوی برای شناخت سیره اهل بیت.">
+  <meta name="keywords" content="چهارده معصوم, اهل بیت, حضرت فاطمه زهرا, پیامبر اسلام, امامان شیعه, چهارده نور, سیره معصومان">
+  <!-- Font: Vazirmatn from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Font Awesome for Icons (SVG-like via CSS) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* ========== RESET & VARIABLES ========== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --green-islamic: #0B6E4F;
+      --gold: #C9A227;
+      --gold-light: #e2c46b;
+      --white: #ffffff;
+      --cream: #FDFBF7;
+      --dark-text: #1e2a2a;
+      --light-text: #4a5a5a;
+      --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.12);
+      --border-radius: 20px;
+      --transition: all 0.3s ease;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background-color: var(--cream);
+      color: var(--dark-text);
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+
+    /* ========== TYPOGRAPHY & UTILS ========== */
+    h1, h2, h3, h4 {
+      font-weight: 700;
+      line-height: 1.4;
+      color: var(--green-islamic);
+    }
+
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; margin-bottom: 1.5rem; position: relative; }
+    h3 { font-size: 1.4rem; margin-bottom: 1rem; color: var(--gold); }
+    p { margin-bottom: 1rem; color: var(--light-text); }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .section-padding {
+      padding: 4rem 0;
+    }
+
+    .text-center { text-align: center; }
+    .gold-text { color: var(--gold); }
+    .green-text { color: var(--green-islamic); }
+
+    /* ========== ISLAMIC GEOMETRIC PATTERN (SVG background) ========== */
+    .pattern-bg {
+      position: relative;
+      background-color: var(--green-islamic);
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9A227' fill-opacity='0.15'%3E%3Cpath d='M30 0l3 12 12 3-12 3-3 12-3-12-12-3 12-3 3-12zM0 30l3 12 12 3-12 3-3 12-3-12-12-3 12-3 3-12zM60 30l3 12 12 3-12 3-3 12-3-12-12-3 12-3 3-12zM30 60l3 12 12 3-12 3-3 12-3-12-12-3 12-3 3-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    /* ========== HEADER ========== */
+    .site-header {
+      background-color: var(--white);
+      box-shadow: var(--shadow-sm);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 2px solid var(--gold-light);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.8rem 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--green-islamic);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+      font-family: 'Vazirmatn', sans-serif;
+    }
+
+    .logo span {
+      color: var(--gold);
+      font-size: 2rem;
+      margin-left: 0.2rem;
+    }
+
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    .nav-menu a {
+      text-decoration: none;
+      color: var(--dark-text);
+      font-weight: 500;
+      transition: var(--transition);
+      padding: 0.5rem 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    .nav-menu a:hover,
+    .nav-menu a:focus {
+      color: var(--gold);
+      border-bottom-color: var(--gold);
+    }
+
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.8rem;
+      color: var(--green-islamic);
+      cursor: pointer;
+      padding: 0.3rem;
+    }
+
+    /* ========== HERO ========== */
+    .hero {
+      padding: 3rem 0 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid var(--gold-light);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1.5rem;
+      color: var(--green-islamic);
+    }
+
+    .hero h1 .gold-accent {
+      color: var(--gold);
+      display: inline-block;
+    }
+
+    .hero-sub {
+      font-size: 1.2rem;
+      color: var(--light-text);
+      margin-bottom: 2.5rem;
+      font-weight: 400;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background-color: var(--green-islamic);
+      color: var(--white);
+      padding: 0.9rem 2.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: var(--transition);
+      border: 2px solid var(--green-islamic);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus {
+      background-color: var(--gold);
+      border-color: var(--gold);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .hero-graphic {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      opacity: 0.6;
+    }
+
+    .hero-graphic svg {
+      width: 60px;
+      height: 60px;
+      fill: var(--gold);
+    }
+
+    /* ========== CARDS GRID (14 MASOOM) ========== */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.8rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: var(--border-radius);
+      padding: 1.8rem 1.2rem;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      cursor: pointer;
+      border: 1px solid rgba(201, 162, 39, 0.2);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .card:hover,
+    .card:focus-within {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--gold);
+    }
+
+    .card.fatima-special {
+      border: 3px solid var(--gold);
+      background: linear-gradient(145deg, #fff, #fdf8ef);
+    }
+
+    .card-icon {
+      font-size: 2.5rem;
+      color: var(--gold);
+      margin-bottom: 1rem;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(201, 162, 39, 0.1);
+      border-radius: 50%;
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.4rem;
+      color: var(--green-islamic);
+    }
+
+    .card .epithet {
+      font-size: 0.9rem;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+    }
+
+    .card .desc {
+      font-size: 0.9rem;
+      color: var(--light-text);
+      line-height: 1.6;
+    }
+
+    /* ========== FATIMA SPECIAL SECTION ========== */
+    .fatima-section {
+      background: linear-gradient(135deg, #FDFBF7 0%, #f7f0e0 100%);
+      border-radius: var(--border-radius);
+      padding: 3rem 2rem;
+      margin: 3rem 0;
+      box-shadow: var(--shadow-sm);
+      border-right: 8px solid var(--gold);
+    }
+
+    .fatima-section h2 {
+      color: var(--gold);
+      font-size: 2rem;
+    }
+
+    .fatima-quote {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--green-islamic);
+      padding: 1.5rem 2rem;
+      background: rgba(11, 110, 79, 0.05);
+      border-radius: 16px;
+      border-right: 4px solid var(--gold);
+      margin: 2rem 0;
+      font-style: italic;
+      text-align: center;
+    }
+
+    /* ========== ARTICLE SECTION ========== */
+    .article-wrapper {
+      display: flex;
+      gap: 2.5rem;
+      margin-top: 2rem;
+      align-items: flex-start;
+    }
+
+    .article-content {
+      flex: 1;
+      background: var(--white);
+      padding: 2.5rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .article-content h2 {
+      border-bottom: 2px solid var(--gold-light);
+      padding-bottom: 0.8rem;
+      margin-top: 2rem;
+    }
+
+    .article-content h3 {
+      margin-top: 1.8rem;
+    }
+
+    .article-content p {
+      text-align: justify;
+    }
+
+    .toc-sticky {
+      width: 260px;
+      flex-shrink: 0;
+      position: sticky;
+      top: 100px;
+      background: var(--white);
+      padding: 1.8rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(201, 162, 39, 0.3);
+    }
+
+    .toc-sticky h4 {
+      color: var(--green-islamic);
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      border-bottom: 1px solid var(--gold-light);
+      padding-bottom: 0.5rem;
+    }
+
+    .toc-list {
+      list-style: none;
+    }
+
+    .toc-list li {
+      margin-bottom: 0.7rem;
+    }
+
+    .toc-list a {
+      text-decoration: none;
+      color: var(--light-text);
+      font-size: 0.95rem;
+      transition: var(--transition);
+      display: block;
+      padding: 0.3rem 0.5rem;
+      border-radius: 8px;
+    }
+
+    .toc-list a:hover,
+    .toc-list a.active {
+      color: var(--green-islamic);
+      background: rgba(11, 110, 79, 0.08);
+      font-weight: 600;
+    }
+
+    /* ========== BACK TO TOP ========== */
+    .back-to-top {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 2rem;
+      color: var(--green-islamic);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.6rem 1.5rem;
+      border-radius: 50px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      border: 1px solid var(--gold-light);
+    }
+
+    .back-to-top:hover {
+      background: var(--gold);
+      color: var(--white);
+      transform: translateY(-3px);
+    }
+
+    /* ========== MODAL ========== */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-content {
+      background: var(--white);
+      max-width: 550px;
+      width: 90%;
+      padding: 2.5rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      transform: scale(0.9);
+      transition: var(--transition);
+      border-top: 6px solid var(--gold);
+    }
+
+    .modal-overlay.active .modal-content {
+      transform: scale(1);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--light-text);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .modal-close:hover {
+      color: var(--gold);
+    }
+
+    .modal-content h3 {
+      color: var(--green-islamic);
+      margin-bottom: 1rem;
+    }
+
+    .modal-content .epithet {
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    /* ========== FOOTER ========== */
+    .site-footer {
+      background: var(--green-islamic);
+      color: var(--white);
+      padding: 3rem 0 1.5rem;
+      margin-top: 4rem;
+      position: relative;
+      border-top: 4px solid var(--gold);
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .footer-brand h3 {
+      color: var(--gold);
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-brand p {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 1rem;
+    }
+
+    .footer-links h4 {
+      color: var(--gold);
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .footer-links ul {
+      list-style: none;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      transition: var(--transition);
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold);
+      transform: translateX(-5px);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .footer-bottom .gold-text {
+      color: var(--gold-light);
+    }
+
+    /* ========== ANIMATIONS (fade-in) ========== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 1024px) {
+      .article-wrapper {
+        flex-direction: column;
+      }
+      .toc-sticky {
+        width: 100%;
+        position: static;
+        order: -1;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      .hero h1 { font-size: 2.2rem; }
+      .hero-sub { font-size: 1rem; }
+
+      .nav-menu {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 70%;
+        height: calc(100vh - 70px);
+        background: var(--white);
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        box-shadow: var(--shadow-lg);
+        transition: var(--transition);
+        gap: 1.5rem;
+        z-index: 999;
+      }
+
+      .nav-menu.open {
+        right: 0;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      .cards-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1.2rem;
+      }
+
+      .article-content {
+        padding: 1.5rem;
+      }
+
+      .fatima-section {
+        padding: 2rem 1.5rem;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+
+      .footer-links a:hover {
+        transform: translateX(0);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 1.8rem; }
+      .cards-grid { grid-template-columns: 1fr; }
+      .container { padding: 0 1rem; }
+      .modal-content { padding: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="چهارده نور - صفحه اصلی">چهارده <span>نور</span></a>
+      <nav aria-label="ناوبری اصلی">
+        <button class="hamburger" aria-label="باز کردن منو" aria-expanded="false" id="hamburgerBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home">خانه</a></li>
+          <li><a href="#cards">چهارده معصوم</a></li>
+          <li><a href="#fatima">حضرت زهرا (س)</a></li>
+          <li><a href="#article">مقاله</a></li>
+          <li><a href="#about">درباره ما</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero pattern-bg" id="home" style="background-color: var(--cream); background-image: url('data:image/svg+xml,%3Csvg width=%2780%27 height=%2780%27 viewBox=%270 0 80 80%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cg fill=%27%23C9A227%27 fill-opacity=%270.08%27%3E%3Cpath d=%27M40 0l5 20 20 5-20 5-5 20-5-20-20-5 20-5 5-20zM0 40l5 20 20 5-20 5-5 20-5-20-20-5 20-5 5-20zM80 40l5 20 20 5-20 5-5 20-5-20-20-5 20-5 5-20zM40 80l5 20 20 5-20 5-5 20-5-20-20-5 20-5 5-20z%27/%3E%3C/g%3E%3C/svg%3E');">
+      <div class="container hero-content fade-in visible">
+        <h1>چهارده معصوم؛ <span class="gold-accent">تجلی نور واحد</span> در تاریخ اسلام</h1>
+        <p class="hero-sub">شناخت سیره اهل بیت (علیهم‌السلام) راهی برای یافتن الگوی زندگی در دنیای امروز است.</p>
+        <a href="#article" class="btn-primary" aria-label="مطالعه مقاله">مطالعه مقاله</a>
+        <div class="hero-graphic" aria-hidden="true">
+          <!-- Symbolic SVG: dome / mihrab -->
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 4C20 4 12 14 12 26v30h8V26c0-8 6-14 12-14s12 6 12 14v30h8V26C52 14 44 4 32 4z"/>
+            <circle cx="32" cy="10" r="3"/>
+          </svg>
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 2L4 30h10v30h36V30h10L32 2z"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 14 CARDS SECTION ========== -->
+    <section class="section-padding" id="cards">
+      <div class="container">
+        <h2 class="text-center fade-in">چهارده معصوم</h2>
+        <p class="text-center fade-in" style="max-width: 700px; margin: 0 auto 1rem;">پیامبر اسلام، حضرت فاطمه زهرا و دوازده امام معصوم؛ هر یک نوری از نور واحد الهی.</p>
+        <div class="cards-grid" id="cardsGrid">
+          <!-- Cards will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FATIMA SPECIAL SECTION ========== -->
+    <section class="section-padding" id="fatima" style="padding-top: 0;">
+      <div class="container">
+        <div class="fatima-section fade-in">
+          <h2>حضرت فاطمه زهرا (س)؛ قلب تپنده اهل بیت</h2>
+          <p>حضرت فاطمه زهرا (سلام‌الله‌علیها) تنها بانویی است که در جمع چهارده معصوم قرار دارد. جایگاه ایشان چنان والاست که پیامبر اکرم (ص) فرمودند: «فاطمه پاره تن من است، هر که او را بیازارد مرا آزرده است.»</p>
+          <p>آیه تطهیر (احزاب: ۳۳) در شأن ایشان و همسر و فرزندانشان نازل شده و سوره کوثر نیز به وجود مبارکشان اشاره دارد. خطبه فدکیه، یادگار فصاحت و شجاعت ایشان در دفاع از ولایت است. مصحف فاطمه (س) و تسبیحات حضرت زهرا (س) از یادگارهای معنوی ایشان است.</p>
+          <div class="fatima-quote">
+            «خشم و خشنودی فاطمه (س)، خشم و خشنودی خداوند است»
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ARTICLE SECTION ========== -->
+    <section class="section-padding" id="article" style="padding-top: 0;">
+      <div class="container">
+        <h2 class="fade-in">چهارده معصوم؛ تجلی نور واحد در تاریخ اسلام</h2>
+        <div class="article-wrapper">
+          <!-- Sticky TOC -->
+          <aside class="toc-sticky fade-in" aria-label="فهرست مطالب">
+            <h4>فهرست مطالب</h4>
+            <ul class="toc-list" id="tocList">
+              <li><a href="#sec1" class="toc-link active">۱. مقدمه</a></li>
+              <li><a href="#sec2" class="toc-link">۲. پیامبر اسلام (ص)</a></li>
+              <li><a href="#sec3" class="toc-link">۳. حضرت فاطمه زهرا (س)</a></li>
+              <li><a href="#sec4" class="toc-link">۴. امامان دوازده‌گانه</a></li>
+              <li><a href="#sec5" class="toc-link">۵. سیره و فضایل مشترک</a></li>
+              <li><a href="#sec6" class="toc-link">۶. نتیجه‌گیری</a></li>
+            </ul>
+          </aside>
+
+          <!-- Article Content -->
+          <article class="article-content fade-in">
+            <h2 id="sec1">مقدمه</h2>
+            <p>چهارده معصوم (علیهم‌السلام) شامل پیامبر گرامی اسلام حضرت محمد (ص)، دخترشان حضرت فاطمه زهرا (س) و دوازده امام معصوم از نسل ایشان می‌شوند. این بزرگواران، تجلی نور واحد الهی در تاریخ بشریت هستند و شناخت سیره و فضایل آنان، چراغ راه زندگی مؤمنانه است.</p>
+            <p>در این مقاله، نگاهی گذرا به جایگاه، فضایل و سیره هر یک از این چهارده نور الهی خواهیم داشت.</p>
+
+            <h2 id="sec2">پیامبر اسلام (ص)</h2>
+            <h3>خاتم پیامبران</h3>
+            <p>حضرت محمد بن عبدالله (ص) در سال ۵۷۰ میلادی در مکه متولد شد. ایشان خاتم الانبیاء و رحمت‌للعالمین هستند. قرآن کریم معجزه جاویدان ایشان است و سیره نبوی بهترین الگوی زندگی برای همه انسان‌ها در همه اعصار است.</p>
+            <h3>لقب‌ها و فضایل</h3>
+            <p>از القاب ایشان می‌توان به «خاتم پیامبران»، «رحمت‌للعالمین» و «امین» اشاره کرد. حدیث ثقلین و حدیث غدیر از مهم‌ترین سخنان ایشان در معرفی اهل بیت است.</p>
+
+            <h2 id="sec3">حضرت فاطمه زهرا (س)</h2>
+            <h3>سیده نساء العالمین</h3>
+            <p>حضرت فاطمه (س) دختر پیامبر اسلام و همسر امام علی (ع) است. ایشان تنها بانویی است که در جمع چهارده معصوم قرار دارد و جایگاه ویژه‌ای در اسلام دارد. آیه تطهیر، سوره کوثر، خطبه فدکیه، مصحف فاطمه و تسبیحات حضرت زهرا (س) از مهم‌ترین یادگارهای ایشان است.</p>
+            <h3>قلب تپنده اهل بیت</h3>
+            <p>پیامبر اکرم (ص) فرمودند: «فاطمه پاره تن من است، هر که او را بیازارد مرا آزرده است.» خشم و خشنودی فاطمه (س)، خشم و خشنودی خداوند است. ایشان در دفاع از ولایت و امامت، خطبه فدکیه را با شجاعت تمام ایراد فرمودند.</p>
+
+            <h2 id="sec4">امامان دوازده‌گانه</h2>
+            <h3>امام علی (ع) – اسدالله الغالب</h3>
+            <p>نخستین امام شیعیان، پسر عمو و داماد پیامبر (ص)، همسر حضرت فاطمه (س) و پدر یازده امام دیگر. ایشان در جنگ‌های بدر، احد، خندق و خیبر نقش تعیین‌کننده داشتند. نهج‌البلاغه یادگار سخنان گهربار ایشان است.</p>
+
+            <h3>امام حسن (ع) – سیدا شباب اهل الجنة</h3>
+            <p>دومین امام، فرزند علی (ع) و فاطمه (س). ایشان با صلح خود، خون‌ریزی و تفرقه در امت اسلامی را در آن شرایط حساس prevented کردند. لقب «سیدا شباب اهل الجنة» از پیامبر (ص) به ایشان و برادرش امام حسین (ع) داده شده است.</p>
+
+            <h3>امام حسین (ع) – سیدالشهدا</h3>
+            <p>سومین امام، که با قیام عاشورا درس آزادگی، ظلم‌ستیزی و فداکاری در راه خدا را به همه بشریت آموخت. نهضت ایشان تأثیر عمیقی بر تاریخ اسلام و جهان گذاشت.</p>
+
+            <h3>امام سجاد (ع) – زین‌العابدین</h3>
+            <p>چهارمین امام، که پس از واقعه عاشورا با صحیفه سجادیه و دعاهای خود، معارف اسلامی را در قالب نیایش به ما رساندند. ایشان الگوی عبادت و بندگی هستند.</p>
+
+            <h3>امام محمد باقر (ع) – باقرالعلوم</h3>
+            <p>پنجمین امام، که با تأسیس حوزه‌های علمی و تربیت شاگردان برجسته، دروازه‌های علم و معرفت را به روی امت اسلامی گشودند. لقب «باقرالعلوم» به معنای شکافنده دانش‌هاست.</p>
+
+            <h3>امام جعفر صادق (ع) – رئیس مذهب</h3>
+            <p>ششمین امام، که در دوره ایشان مکتب فقهی شیعه با بیش از چهار هزار شاگرد شکل گرفت. ایشان به «رئیس مذهب جعفری» شهرت دارند و احادیث بسیاری از ایشان در منابع روایی ثبت شده است.</p>
+
+            <h3>امام موسی کاظم (ع) – باب‌الحوائج</h3>
+            <p>هفتمین امام، که به دلیل تحمل زندان‌های طولانی و سکوت و کظم غیظ، به «کاظم» ملقب شدند. ایشان باب‌الحوائج نام گرفته‌اند و کرامات بسیاری از ایشان نقل شده است.</p>
+
+            <h3>امام رضا (ع) – عالم آل محمد</h3>
+            <p>هشتمین امام، که با سفر به ایران و مناظرات علمی با دانشمندان ادیان دیگر، اسلام را به جهانیان معرفی کردند. حرم مطهر ایشان در مشهد مقدس، پناهگاه عاشقان است.</p>
+
+            <h3>امام محمد تقی (ع) – جوادالائمه</h3>
+            <p>نهمین امام، که در سنین نوجوانی به امامت رسیدند و با دانش سرشار خود، پاسخگوی پرسش‌های علمی و اعتقادی بودند. لقب «جواد» به معنای بخشنده است.</p>
+
+            <h3>امام علی نقی (ع) – هادی</h3>
+            <p>دهمین امام، که با وجود فشارهای سیاسی، به هدایت و راهنمایی مردم پرداختند. ایشان را «هادی» به معنای هدایت‌گر می‌نامند.</p>
+
+            <h3>امام حسن عسکری (ع) – عسکریین</h3>
+            <p>یازدهمین امام، که در سامرا تحت نظر بودند و از آنجا که در محله نظامی (عسکر) سکونت داشتند، به «عسکری» مشهور شدند. ایشان پدر حضرت مهدی (عج) هستند.</p>
+
+            <h3>امام مهدی (عج) – بقیه‌الله</h3>
+            <p>دوازدهمین و آخرین امام، که در سال ۲۵۵ هجری متولد شدند و پس از غیبت صغری، در غیبت ک            <h3>امام مهدی (عج) – بقیه‌الله</h3>
+            <p>دوازدهمین و آخرین امام، که در سال ۲۵۵ هجری متولد شدند و پس از غیبت صغری، در غیبت کبری به سر می‌برند. ایشان روزی با ظهور خود، جهان را پر از عدل و داد خواهند کرد. اعتقاد به مهدویت، امیدبخش‌ترین آموزه شیعه در تاریخ است.</p>
+
+            <h2 id="sec5">سیره و فضایل مشترک</h2>
+            <p>آنچه چهارده معصوم را به هم پیوند می‌دهد، نور واحد الهی است که در وجود آنان تجلی یافته. همه ایشان در عصمت، علم لدنی، شجاعت، زهد، عدالت‌خواهی و خدمت به مردم مشترک‌اند. حدیث ثقلین (قرآن و عترت) و حدیث سفینه (اهل بیت کشتی نجات) از مهم‌ترین منابع مشترک معرفی جایگاه آنان است.</p>
+            <p>سیره عملی ایشان در برخورد با مردم، خانواده، دشمنان و حتی حیوانات، الگویی کامل برای زندگی روزمره ماست. آنان در اوج قدرت، ساده‌زیستند و در برابر ظلم، سکوت نکردند.</p>
+
+            <h2 id="sec6">نتیجه‌گیری</h2>
+            <p>شناخت چهارده معصوم (علیهم‌السلام) تنها یک مطالعه تاریخی نیست؛ بلکه راهی برای یافتن الگوی زندگی در دنیای امروز است. در جهانی که پر از ابهام و سرگردانی است، سیره این بزرگواران چراغ راه ماست. بیایید با مطالعه و عمل به سیره آنان، نور واحد الهی را در زندگی خود جاری کنیم.</p>
+
+            <a href="#home" class="back-to-top" aria-label="بازگشت به بالای صفحه">
+              <i class="fas fa-arrow-up"></i> بازگشت به بالا
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="section-padding" id="about" style="padding-top: 0;">
+      <div class="container">
+        <div class="fatima-section fade-in" style="border-right-color: var(--green-islamic);">
+          <h2>درباره ما</h2>
+          <p>«چهارده نور» سایتی است مستقل و غیرانتفاعی که با هدف معرفی چهارده معصوم (علیهم‌السلام) و ارائه مقاله‌ای جامع درباره سیره و فضایل آنان طراحی شده است. تمام محتوای این سایت برگرفته از منابع معتبر شیعی از جمله «سیره چهارده معصوم» و «حیاة الامام» است.</p>
+          <p>امید است این تلاش کوچک، گامی در جهت شناخت بهتر اهل بیت (ع) باشد.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== MODAL ========== -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="بستن مودال">
+        <i class="fas fa-times"></i>
+      </button>
+      <h3 id="modalTitle"></h3>
+      <p class="epithet" id="modalEpithet"></p>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer pattern-bg">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3>چهارده نور</h3>
+        <p>تجلی نور واحد در تاریخ اسلام</p>
+      </div>
+      <div class="footer-links">
+        <h4>لینک‌های سریع</h4>
+        <ul>
+          <li><a href="#home">خانه</a></li>
+          <li><a href="#cards">چهارده معصوم</a></li>
+          <li><a href="#fatima">حضرت زهرا (س)</a></li>
+          <li><a href="#article">مقاله</a></li>
+          <li><a href="#about">درباره ما</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>شناخت سیره این بزرگواران، راهی برای یافتن الگوی زندگی در دنیای امروز است</p>
+      <p style="margin-top: 0.5rem;">© <span id="currentYear"></span> <span class="gold-text">چهارده نور</span> — منابع: سیره چهارده معصوم، حیاة الامام</p>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    // ============================================================
+    // داده‌های چهارده معصوم (قابل ویرایش: نام، لقب، توضیح کوتاه)
+    // ============================================================
+    const masoomin = [
+      {
+        name: "پیامبر اسلام (ص)",
+        epithet: "خاتم پیامبران",
+        desc: "رحمت‌للعالمین و آخرین فرستاده خداوند که قرآن کریم معجزه جاویدان اوست.",
+        icon: "fa-moon"
+      },
+      {
+        name: "حضرت فاطمه زهرا (س)",
+        epithet: "سیده نساء العالمین",
+        desc: "تنها بانوی چهارده معصوم؛ قلب تپنده اهل بیت و پاره تن پیامبر (ص).",
+        icon: "fa-heart",
+        special: true
+      },
+      {
+        name: "امام علی (ع)",
+        epithet: "اسدالله الغالب",
+        desc: "نخستین امام شیعیان، داماد پیامبر (ص) و صاحب نهج‌البلاغه.",
+        icon: "fa-shield-halved"
+      },
+      {
+        name: "امام حسن (ع)",
+        epithet: "سیدا شباب اهل الجنة",
+        desc: "دومین امام که با صلح خود از تفرقه در امت اسلامی جلوگیری کرد.",
+        icon: "fa-scale-balanced"
+      },
+      {
+        name: "امام حسین (ع)",
+        epithet: "سیدالشهدا",
+        desc: "سومین امام که با قیام عاشورا درس آزادگی و ظلم‌ستیزی را به جهانیان آموخت.",
+        icon: "fa-droplet"
+      },
+      {
+        name: "امام سجاد (ع)",
+        epithet: "زین‌العابدین",
+        desc: "چهارمین امام و صاحب صحیفه سجادیه؛ الگوی عبادت و نیایش.",
+        icon: "fa-hands-praying"
+      },
+      {
+        name: "امام محمد باقر (ع)",
+        epithet: "باقرالعلوم",
+        desc: "پنجمین امام که دروازه‌های علم و معرفت را بر امت اسلامی گشود.",
+        icon: "fa-book"
+      },
+      {
+        name: "امام جعفر صادق (ع)",
+        epithet: "رئیس مذهب",
+        desc: "ششمین امام و بنیان‌گذار مکتب فقهی شیعه با بیش از چهار هزار شاگرد.",
+        icon: "fa-graduation-cap"
+      },
+      {
+        name: "امام موسی کاظم (ع)",
+        epithet: "باب‌الحوائج",
+        desc: "هفتمین امام که به دلیل کظم غیظ و تحمل زندان، «کاظم» لقب گرفت.",
+        icon: "fa-door-open"
+      },
+      {
+        name: "امام رضا (ع)",
+        epithet: "عالم آل محمد",
+        desc: "هشتمین امام که با مناظرات علمی، اسلام را به جهانیان معرفی کرد.",
+        icon: "fa-star"
+      },
+      {
+        name: "امام محمد تقی (ع)",
+        epithet: "جوادالائمه",
+        desc: "نهمین امام که در نوجوانی به امامت رسید و با دانش خود پاسخگو بود.",
+        icon: "fa-gem"
+      },
+      {
+        name: "امام علی نقی (ع)",
+        epithet: "هادی",
+        desc: "دهمین امام که با وجود فشارهای سیاسی، به هدایت مردم پرداخت.",
+        icon: "fa-compass"
+      },
+      {
+        name: "امام حسن عسکری (ع)",
+        epithet: "عسکریین",
+        desc: "یازدهمین امام و پدر حضرت مهدی (عج) که در سامرا تحت نظر بود.",
+        icon: "fa-mosque"
+      },
+      {
+        name: "امام مهدی (عج)",
+        epithet: "بقیه‌الله",
+        desc: "دوازدهمین و آخرین امام که با ظهور خود جهان را پر از عدل و داد خواهد کرد.",
+        icon: "fa-sun"
+      }
+    ];
+
+    // ============================================================
+    // ساخت کارت‌های چهارده معصوم
+    // ============================================================
+    const cardsGrid = document.getElementById('cardsGrid');
+    masoomin.forEach((person, index) => {
+      const card = document.createElement('div');
+      card.className = 'card fade-in' + (person.special ? ' fatima-special' : '');
+      card.setAttribute('tabindex', '0');
+      card.setAttribute('role', 'button');
+      card.setAttribute('aria-label', 'مشاهده توضیحات ' + person.name);
+      card.innerHTML = `
+        <div class="card-icon"><i class="fas ${person.icon}"></i></div>
+        <h3>${person.name}</h3>
+        <div class="epithet">${person.epithet}</div>
+        <p class="desc">${person.desc}</p>
+      `;
+      // باز کردن مودال با کلیک یا کلید Enter/Space
+      const openModal = () => showModal(person);
+      card.addEventListener('click', openModal);
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openModal();
+        }
+      });
+      cardsGrid.appendChild(card);
+    });
+
+    // ============================================================
+    // مودال
+    // ============================================================
+    const modalOverlay = document.getElementById('modalOverlay');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalEpithet = document.getElementById('modalEpithet');
+    const modalDesc = document.getElementById('modalDesc');
+    const modalClose = document.getElementById('modalClose');
+
+    function showModal(person) {
+      modalTitle.textContent = person.name;
+      modalEpithet.textContent = person.epithet;
+      modalDesc.textContent = person.desc;
+      modalOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      modalClose.focus();
+    }
+
+    function closeModal() {
+      modalOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    modalClose.addEventListener('click', closeModal);
+    modalOverlay.addEventListener('click', (e) => {
+      if (e.target === modalOverlay) closeModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modalOverlay.classList.contains('active')) closeModal();
+    });
+
+    // ============================================================
+    // منوی همبرگری (موبایل)
+    // ============================================================
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navMenu = document.getElementById('navMenu');
+
+    hamburgerBtn.addEventListener('click', () => {
+      const isOpen = navMenu.classList.toggle('open');
+      hamburgerBtn.setAttribute('aria-expanded', isOpen);
+      hamburgerBtn.innerHTML = isOpen
+        ? '<i class="fas fa-times"></i>'
+        : '<i class="fas fa-bars"></i>';
+    });
+
+    // بستن منو با کلیک روی لینک‌ها
+    navMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+        hamburgerBtn.innerHTML = '<i class="fas fa-bars"></i>';
+      });
+    });
+
+    // ============================================================
+    // هایلایت فهرست مطالب (TOC) هنگام اسکرول
+    // ============================================================
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const sections = document.querySelectorAll('.article-content h2[id]');
+
+    function highlightTOC() {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+      tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+    window.addEventListener('scroll', highlightTOC);
+    highlightTOC(); // اجرای اولیه
+
+    // ============================================================
+    // انیمیشن fade-in هنگام اسکرول (Intersection Observer)
+    // ============================================================
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          fadeObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeElements.forEach(el => fadeObserver.observe(el));
+
+    // ============================================================
+    // سال جاری در فوتر
+    // ============================================================
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
